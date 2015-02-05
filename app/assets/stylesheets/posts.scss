@@ -1,4 +1,3 @@
-
 @import 'partials/variables'; 
 @import 'partials/comments';
 
@@ -28,6 +27,7 @@ body {
 		top: 0;
 		padding:0 0 5px 0;
 		border-bottom: 5px solid lighten($color-1, 20%);
+		box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
 		
 
 		h1 {
@@ -81,9 +81,9 @@ body {
 
 
 	.bg-main-content {
-		position: absolute;
+		position: relative;
 		width:100%;
-		height: 100%;
+		height: auto;
 		background-color: lighten($color-4, 30%);
 		top: 60px;
 
@@ -91,28 +91,41 @@ body {
 			position: fixed;
 			width:20%;
 			height: 768px;
-			background-color: lighten($color-4, 30%);
-			top:50px;
+			background-color: #fff;
+			top:60px;
 			float: left;
 
 		}
 
 		.bg-content {
 			position: relative;
-			width:75%;
+			width:78%;
 			height: 500x;
-			background-color: lighten($color-4, 30%);
+			background-color: #fff;
 			float: right;
 			z-index:-999;
+			border: 1px solid #CCC;
+    		
+   			border-top: 4px solid #41307c;
+   			border-top-left-radius: 9px;
+    		border-top-right-radius: 9px;
+		    
+		    margin-right:10px;
+		 
+		   
+		    
+					
 		}
 		
 	}
 
 
 	.bg-sidebar{
-		top:-10px;
+		margin-top:10px;
 		margin:0;
-		box-shadow: 4px 4px 20px #4c4c4c;
+		 box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+		 border-top-left-radius: 9px;
+    		border-top-right-radius: 9px;
 		z-index: 2;
 
 		.bg-side-header {
@@ -126,6 +139,8 @@ body {
 			top:0;
 			text-align:center;
 			padding:7px;
+			border-top-left-radius: 9px;
+    		border-top-right-radius: 9px;
 			
 
 			h3{
@@ -180,8 +195,17 @@ body {
 
 	.bg-content {
 		padding:20px 20px 20px 20px;
+		border-top:2px soild $color-1;
+
+		.bg-headers {
+			display:block;
+			position:relative;
+			width:100%;
+			height:50px;
+			border-bottom:1px solid #ccc;
+			text-align:right;
+		}
 	}
 
 }
 /*---------------comment-------*/
-
